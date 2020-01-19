@@ -1,6 +1,6 @@
 import json
 from flask import Flask
-from flask import request, abort, send_from_directory
+from flask import request, abort
 import os
 import hmac
 import hashlib
@@ -21,16 +21,12 @@ def health():
             {"Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-cache"},
         )
 
-@app.route('/js/<path:path>')
-def send_js(path):
-    return send_from_directory('js', path)
-
-
 @app.route('/github', methods=['POST'])
 def listener():
     """
-
-    :return:
+    python - flask web application to listen to
+    github hooks
+    :return: json
     """
     signature = request.headers.get("X-Hub-Signature")
     if not signature or not signature.startswith("sha1="):
