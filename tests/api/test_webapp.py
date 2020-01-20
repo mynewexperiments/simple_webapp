@@ -19,8 +19,11 @@ def post_json(client, url, json_dict):
 def json_of_response(response):
     return json.loads(response.data.decode('utf8'))
 
-def test_dummy(client):
+def test_route(client):
     response = client.get('/')
     assert b'hello world' in response.data
 
+def test_health(client):
+    response = client.get('/health')
+    assert b'ok' in response.data
 

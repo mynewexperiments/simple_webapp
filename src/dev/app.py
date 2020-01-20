@@ -5,8 +5,7 @@ import os
 import hmac
 import hashlib
 
-
-GITHUB_SECRET = os.environ["GITHUB_TOKEN"]
+GITHUB_SECRET = os.environ["AUTH_TOKEN"]
 app = Flask(__name__, static_url_path='')
 
 @app.route('/')
@@ -41,11 +40,13 @@ def listener():
     if request.headers['Content-Type'] == 'application/json':
         # url = os.path.join(os.path.dirname(__file__), "event_store")
         event = json.dumps(request.json)
+        print(event)
         return event
 
 if __name__ == "__main__":
 
     app.run(debug=True)
+    # update_protection()
 
 
 
