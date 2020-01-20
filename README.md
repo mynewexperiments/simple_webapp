@@ -25,7 +25,12 @@
   
   Once the branch is created, Flask App would automatically trigger the **update-branch-protection** Github Api and apply
   master branch protection on all **Repositories**
+  
+## Tests
+    
+   Unit tests are created to check the **route** & **health** of the Api
    
+## Next Steps
     
   
   
