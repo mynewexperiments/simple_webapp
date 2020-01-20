@@ -19,5 +19,5 @@ def change_protected_branch_settings_test():
 
 
 if __name__ == "__main__":
-    change_protected_branch_settings_test()
+    change_protected_branch_settings()
 
