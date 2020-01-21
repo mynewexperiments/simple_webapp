@@ -17,7 +17,3 @@ def change_protected_branch_settings_test():
     branch = g.get_repo("mynewexperiments/test123").get_branch("master")
     branch.edit_protection(required_approving_review_count=2, enforce_admins=True)
 
-
-if __name__ == "__main__":
-    change_protected_branch_settings()
-
