@@ -39,8 +39,8 @@
    
 ## Some References used
 
-    (https://github.com/BrinnerTechie/github-branch-protection-rules)
-    (https://stackoverflow.com/questions/51020398/github-api-enable-push-restrictions-for-branch)
+    [1](https://github.com/BrinnerTechie/github-branch-protection-rules)
+    [2](https://stackoverflow.com/questions/51020398/github-api-enable-push-restrictions-for-branch)
    
 ## Next Steps or Improvements
 
