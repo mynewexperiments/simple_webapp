@@ -7,7 +7,7 @@ cffi==1.13.2
 cfgv==2.0.1
 chardet==3.0.4
 Click==7.0
-cryptography==2.8
+cryptography==3.2
 Deprecated==1.2.7
 entrypoints==0.3
 flake8==3.7.9
