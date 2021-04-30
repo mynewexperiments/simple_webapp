@@ -55,7 +55,7 @@ toml==0.10.0
 toolz==0.10.0
 typed-ast==1.4.1
 uritools==3.0.0
-urllib3==1.25.7
+urllib3==1.25.8
 virtualenv==16.7.9
 wcwidth==0.1.8
 Werkzeug==0.16.0
